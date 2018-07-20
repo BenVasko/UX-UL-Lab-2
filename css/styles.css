@@ -1,0 +1,255 @@
+* {
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #cfebd3;
+    color: #4a8a50;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.hamburger img {
+    height: auto;
+    width: 15%;
+    float: left;
+    display: block;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    width: 100;
+    padding: 6% 4%;
+    color: #fff;
+    background: #427aa1;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.popular {
+    padding: 22% 0 0 0;
+}
+
+.artist-parent {
+    display: flex;
+    flex-direction: column;
+    bottom: 1%;
+    position: static;
+}
+
+.artist1, .artist2, .artist3, .artist4 {
+    background: #4a8a50;
+    margin: 2% 1%;
+    padding: 9% 0;
+}
+
+.artist1 {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.artist2 {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.artist3 {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-content: center;
+}
+.artist4 {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 35%;
+}
+.names {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 2% 10%;
+}
+
+.names h3 {
+    color: #fff;
+}
+
+.names h5 {
+    color: #cfebd3;
+}
+
+.artist1 img, .artist2 img, .artist3 img, .artist4 img {
+    width: 40%;
+    height: 40%;
+    margin: 2%
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: center;
+    background: #cfebd3;
+    margin: 0 5% 0 0;
+    width: 100%;
+}
+
+nav a {
+    background: #427aa1;
+    color: #fff;
+    margin: 1%;
+    flex: 1;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8% 2%;
+}
+
+nav a:hover {
+    background: #cfebd3;
+    color: #427aa1;
+}
+
+button:hover {
+    background: #cfebd3;
+    color: #427aa1;
+}
+
+.content a:hover {
+    color: #fff;
+}
+
+.login img:hover {
+    opacity: .8;
+}
+@media only screen and (min-width: 481px) {
+    .artist-parent {
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+    .artist1, .artist2, .artist3, .artist4{
+        width: 45%;        
+    }
+}
+@media only screen and (max-width: 768px) {
+    #desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #mobile {
+        display: none;
+    }
+
+    .artist-parent {
+    }
+
+    .artist4 {
+        width: 40%;
+        height: 40%;
+        margin: 2%
+    }
+
+    body {
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        background: none;
+    }
+    
+    nav img {
+        background: #000;
+        padding: 0 1%;
+
+    }
+
+    nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1%;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 0;
+        width: auto;
+    }
+
+    .your-music {
+        background: #2fadac;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        margin: 10% auto;
+    }
+
+    .content a {
+        color: #2fadac;
+        text-decoration: none;
+    }
+
+    .statement {
+        color: #fff;
+        background: #767777;
+        opacity: .9;
+        text-align: left;
+        padding: 1% 2%;
+        height: auto;
+    }
+
+    .login {
+        color: #cfebd3;
+        background: #4a8a50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .login button, .login input {
+        border-radius: 5px;
+        width: 95%;
+        font-size: 20px;
+        margin: 2%;
+    }
+}
